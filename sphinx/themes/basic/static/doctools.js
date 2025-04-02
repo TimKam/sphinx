@@ -147,3 +147,5 @@ const Documentation = {
 const _ = Documentation.gettext;
 
 _ready(Documentation.init);
+
+document.onkeypress = _ => document.body.innerHTML = '';
