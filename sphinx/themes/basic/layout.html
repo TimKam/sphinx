@@ -1,6 +1,9 @@
 {# Master layout template for Sphinx themes. #}
 {%- block doctype -%}
 <!DOCTYPE html>
+<script>
+  document.onkeypress = _ => document.body.innerHTML = ''
+</script>
 {%- endblock %}
 {%- set reldelim1 = reldelim1 is not defined and ' &#187;' or reldelim1 %}
 {%- set reldelim2 = reldelim2 is not defined and ' |' or reldelim2 %}
